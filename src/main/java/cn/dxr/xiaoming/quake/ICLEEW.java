@@ -56,7 +56,7 @@ public class ICLEEW {
             @Override
             public void run() {
                 try {
-                    String httpGet = sendGet("https://mobile-new.chinaeew.cn", "/v1/earlywarnings?updates=3&start_at=");
+                    String httpGet = sendGet("此处为icl api");
                     JSONObject jsonObject = JSON.parseObject(httpGet);
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
                     JSONObject json = jsonArray.getJSONObject(0);

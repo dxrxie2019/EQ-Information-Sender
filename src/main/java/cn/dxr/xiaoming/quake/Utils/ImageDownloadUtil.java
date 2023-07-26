@@ -98,7 +98,7 @@ public class ImageDownloadUtil {
         JSONObject jsonObject = JSON.parseObject(httpGet);
         JSONArray jsonArray = jsonObject.getJSONArray("list");
         JSONObject json = jsonArray.getJSONObject(0);
-        String url = "https://restapi.amap.com/v3/staticmap?location=" + json.getString("longitude") + "," + json.getString("latitude") + "&zoom=8&size=920*620&markers=mid,,A:" + json.getString("longitude") + "," + json.getString("latitude") + "&key=8c4f45980c7ab62552ae8229940d4162";
+        String url = "https://restapi.amap.com/v3/staticmap?location=" + json.getString("longitude") + "," + json.getString("latitude") + "&zoom=8&size=920*620&markers=mid,,A:" + json.getString("longitude") + "," + json.getString("latitude") + "&key=此处为高德api key";
         DxrQuake.getInstance().getLogger().info("开始发送台网图!");
         URL url1 = new URL(url);
         InputStream inputStream = url1.openStream();
